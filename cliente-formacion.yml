@@ -4,13 +4,12 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: 192.168.210.14
-    non-secure-port: 8081
+
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
 
 cursos:
   urlBase: ${URL_BASE_CURSO:http://servicio-cursos}
