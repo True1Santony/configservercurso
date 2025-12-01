@@ -4,7 +4,8 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: localhost
+    hostname: 192.168.210.14
+    non-secure-port: 8081
   client:
     register-with-eureka: true
     fetch-registry: true
